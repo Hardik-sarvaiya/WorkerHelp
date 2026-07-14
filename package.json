@@ -1,0 +1,68 @@
+{
+   
+  "name": "fullstack-app",
+   
+  "version": "1.0.0",
+   
+  "private": true,
+   
+  "scripts": {
+   
+     
+  "server": "cd backend && nodemon index.js",
+   
+     
+  "client": "cd client && npm run dev",
+   
+     
+  "dev": "concurrently -n \"server,client\" -c \"bgYellow,bgBlue\" \"npm run server\" \"npm run client\""
+   
+  },
+   
+  "devDependencies": {
+   
+     
+  "autoprefixer": "^10.4.21",
+   
+     
+  "baseline-browser-mapping": "^2.10.43",
+   
+     
+  "concurrently": "^9.2.1",
+   
+     
+  "nodemon": "^3.0.0"
+   
+  },
+   
+  "dependencies": {
+   
+     
+  "axios": "^1.12.2",
+   
+     
+  "cloudinary": "^2.9.0",
+   
+     
+  "cors": "^2.8.5",
+   
+     
+  "multer": "^2.1.1",
+   
+     
+  "process": "^0.11.10",
+   
+     
+  "react": "^19.1.1",
+   
+     
+  "react-dom": "^19.1.1",
+   
+     
+  "react-router-dom": "^7.9.1",
+   
+     
+  "react-type-animation": "^3.2.0"
+   
+  }
+}
