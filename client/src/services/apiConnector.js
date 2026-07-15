@@ -4,7 +4,7 @@ import axios from "axios";
 
 // Create an axios instance with the backend base URL
 export const axiosInstance = axios.create({
-  baseURL: "http://workerhelp.vercel.app",
+  baseURL: "https://workerhelp.vercel.app",
 });
 
 // Generic API connector function

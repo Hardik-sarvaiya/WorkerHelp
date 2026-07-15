@@ -56,7 +56,7 @@ const ChangeProfilePicture = () => {
         const fullImageUrl =
           updatedUser.image.startsWith("http")
             ? updatedUser.image
-            : `http://workerhelp.vercel.app${updatedUser.image}`; // backend port
+            : `https://workerhelp.vercel.app${updatedUser.image}`; // backend port
 
         setPreviewSource(fullImageUrl);
 
@@ -82,7 +82,7 @@ const ChangeProfilePicture = () => {
             (user?.image?.startsWith("http")
               ? user.image
               : user?.image
-              ? `http://workerhelp.vercel.app${user.image}` // backend port
+              ? `https://workerhelp.vercel.app${user.image}` // backend port
               : "/default-avatar.png")
           }
           alt={`profile-${user?.firstName || "user"}`}

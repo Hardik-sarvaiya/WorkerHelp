@@ -22,7 +22,7 @@ const Catalog = () => {
 
     const fetchWorkers = async () => {
       try {
-        const response = await axios.get("http://workerhelp.vercel.app/workers/all", {
+        const response = await axios.get("https://workerhelp.vercel.app/workers/all", {
           signal: controller.signal,
         });
 
